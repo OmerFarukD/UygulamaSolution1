@@ -206,15 +206,23 @@ List<int> oddNumbers = new();
 //    }
 //}
 
-oddNumbers = numbers.FindAll(odd=> odd%2!=0);
-evenNumbers = numbers.FindAll(e=> e%2==0);
-numbers.FindAll(odd => odd % 2 != 0).ForEach(x=> Console.WriteLine(x));
-Console.WriteLine("Çift Sayılar");
-evenNumbers.ForEach(even => Console.WriteLine(even));
-Console.WriteLine("Tek sayılar");
-oddNumbers.ForEach(x => Console.WriteLine(x));
+//oddNumbers = numbers.FindAll(odd=> odd%2!=0);
+//evenNumbers = numbers.FindAll(e=> e%2==0);
+//numbers.FindAll(odd => odd % 2 != 0).ForEach(x=> Console.WriteLine(x));
+//Console.WriteLine("Çift Sayılar");
+//evenNumbers.ForEach(even => Console.WriteLine(even));
+//Console.WriteLine("Tek sayılar");
+//oddNumbers.ForEach(x => Console.WriteLine(x));
 
+// Kullanıcıdan 10 dan büyük sayı alana kadar Kullanıcıdan sayı almaya devam etsin
 
+Console.WriteLine("Lütfen Sayı giriniz.");
+int deger = Convert.ToInt32(Console.ReadLine());
 
-
-
+while (deger<10)
+{
+    Console.WriteLine("Lütfen Sayı giriniz.");
+    deger = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("10 DAN BÜYÜK BİR SAYI GİRİNİZ.");
+}
+Console.WriteLine(deger);
